@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\SiteController;
 
 
 
@@ -23,19 +24,19 @@ Route::group(
     ], function(){ 
         Auth::routes();
         // Route::get('route_login_register','SiteController@route_login_register')->name('route_login_register');
-        Route::get('/home','SiteController@index')->name('home');
-        Route::get('/','SiteController@index')->name('site.index');
+        Route::get('/home', [SiteController::class, 'index'])->name('home');
+        Route::get('/',[SiteController::class, 'index'])->name('site.index');
          // ------------------contact us----------------
-         Route::get('contact','SiteController@contact')->name('contact');
-         Route::post('contact/store','SiteController@store_contact')->name('site.contact.store');
-         Route::get('faqs','SiteController@faqs')->name('faqs');
+         Route::get('/contact',[SiteController::class, 'contact'])->name('contact');
+         Route::post('/contact/store', [SiteController::class, 'store_contact'])->name('site.contact.store');
+         Route::get('/faqs', [SiteController::class, 'faqs'])->name('faqs');
 
         //  -----------------signature & countries----------------
 
-         Route::get('signature','SiteController@signature')->name('signature');
-         Route::get('single/country/{slug}','SiteController@single_country')->name('single_country');
-         Route::get('countries/filter',"SiteController@countries_filter")->name('countries.filter');
-         Route::get('trip/{slug}',"SiteController@trip")->name('trip');
+        Route::get('/signature', [SiteController::class, 'signature'])->name('signature');
+        Route::get('/single/country/{slug}', [SiteController::class, 'single_country'])->name('single_country');
+        Route::get('/countries/filter', [SiteController::class, 'countries_filter'])->name('countries.filter');
+         Route::get('/trip/{slug}', [SiteController::class, 'trip'])->name('trip');
 
 
          // ------------------subscripe_news_letter----------------
