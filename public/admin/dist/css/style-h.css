@@ -1,0 +1,85 @@
+
+
+.swal2-container.swal2-center>.swal2-popup {
+    padding: 10px 20px 40px;
+}
+
+.swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm {
+    min-width: 120px;
+    box-shadow: none;
+}
+
+table.table-bordered.dataTable tbody td .btn {
+    line-height: 20px !important;
+    width: 31px !important;
+    height: 31px !important;
+    padding: 5px !important;
+    font-size: 11px !important;
+    border-radius: 3px !important;
+}
+
+.brand-image {
+    width: 35px;
+    height: 35px;
+    max-height: inherit;
+}
+
+.user-panel .info a {
+    font-size: 12px;
+    color: blue;
+    line-height: 12px;
+}
+
+.user-panel .info a.d-block {
+    font-size: 15px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+table.table-bordered.dataTable td img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+    font-size: 14px;
+}
+
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting {
+    /*font-size: 13px;*/
+}
+
+.dropdown-menu-lg .dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-menu-lg .dropdown-item .float-right.text-muted.text-sm {
+    display: block;
+    width: 100%;
+}
+
+table.table-bordered.dataTable tbody td .btn.show {
+    width: auto !important;
+}
+
+.form-group img {
+    max-width: 200px !important;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
